@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo1 {
+  font-size: 2em;
+  color: #359381;
+  pointer-events: none;
+}
+
+.navigation {
+  display: flex;
+  position: absolute;
+  left: 50%; /* Posisi horizontal dari kiri */
+  transform: translateX(-50%); /* Pastikan benar-benar di tengah */
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #359381;
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active {
+  background: #359381;
+  color: #ffff;
+}
+
+.parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 108vh;
+}
+
+#text {
+  position: absolute;
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  margin-top: -35px;
+}
+
+.pengenalan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-image: url("background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  padding: 0 20% 10%;
+  gap: 50px;
+}
+
+.deskripsi {
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  width: 100%;
+  pointer-events: none;
+  z-index: 50;
+  /* transform: translate(-50%, 50%); */
+  transition: 1.2s ease; /* Smooth transition */
+  text-shadow: 2px 2px 4px rgba(0,  0,  0,  .2);
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin-right: 10px;
+  background: linear-gradient(
+    90deg,
+    #fbc02d,
+    #f57c00
+  ); /* Gradien dari kuning ke oranye */
+  padding: 5px 10px;
+  border-radius: 60px;
+  color: #fff;
+}
+
+.nama-aplikasi {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.highlight {
+  background: linear-gradient(
+    90deg,
+    #fbc02d,
+    #f57c00
+  ); /* Gradien dari kuning ke oranye */
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 2vh;
+  padding: 10px 20px;
+  background-color: #0f375b;
+  color: #fff;
+  font-size: 0.75em;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  pointer-events: auto;
+}
+
+.button:hover {
+  background-color: #b71c1c;
+}
+
+.gambar-handphone {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 50;
+}
+
+.phone1 {
+  position: absolute;
+  top: 10%;
+  right: -200px;
+  width: 10%;
+  pointer-events: none;
+  transition: 0.25s ease; /* Transisi untuk animasi smooth */
+  z-index: 50;
+}
+
+.phone2 {
+  position: absolute;
+  top: 14%;
+  right: -200px; /* Posisi awal di luar layar sebelah kiri */
+  width: 9%;
+  pointer-events: none;
+  transition: 0.5s ease; /* Transisi untuk animasi smooth */
+  z-index: 40;
+}
+
+.phone3 {
+  position: absolute;
+  top: 14%;
+  right: -200px; /* Posisi awal di luar layar sebelah kiri */
+  width: 9%;
+  pointer-events: none;
+  transition: 0.5s ease; /* Transisi untuk animasi smooth */
+  z-index: 40;
+}
+
+.phone4 {
+  position: absolute;
+  top: 17%;
+  right: -200px; /* Posisi awal di luar layar sebelah kiri */
+  width: 8%;
+  pointer-events: none;
+  transition: 0.6s ease; /* Transisi untuk animasi smooth */
+  z-index: 30;
+}
+
+.phone5 {
+  position: absolute;
+  top: 17%;
+  right: -200px; /* Posisi awal di luar layar sebelah kiri */
+  width: 8%;
+  pointer-events: none;
+  transition: 0.6s ease; /* Transisi untuk animasi smooth */
+  z-index: 30;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  align-items: center;
+  min-height: 100vh;
+  margin: auto;
+  background-image: url("bg-2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.logo-section {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 10;
+  transition: 0.6s ease;
+  position: absolute;
+  left: 1%;
+  pointer-events: none;
+  top: 0;
+}
+
+.logo-img img {
+  width: 450px;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.content-section {
+  flex: 1;
+  padding: 20px;
+  z-index: 5;
+  transition: 0.6s ease;
+  position: absolute;
+  top: 0;
+  right: 1%;
+  width: 35%;
+  pointer-events: none;
+  text-align: justify;
+}
+
+.title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  transition: transform 0.5s ease;
+}
+
+.container h2 {
+  font-size: 2em;
+  color: #359381;
+  margin-bottom: 10px;
+}
+
+.container p {
+  font-size: 1em;
+  color: #000000;
+  font-weight: 400;
+}
+
+.feature-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Pastikan semua elemen berada di tengah */
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.feature-container.bg-1 {
+  background-image: url("bg-3.png");
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 56.25vh;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.feature-container.bg-2 {
+  background-image: url("bg-4.png");
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 56.25vh;
+  margin-right: -8%;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.feature-title {
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center; /* Pastikan judul berada di tengah */
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: center; /* Pastikan elemen berada di tengah secara horizontal */
+  align-items: center; /* Pastikan elemen rata tengah secara vertikal */
+  flex-wrap: nowrap; /* Hindari elemen menumpuk, tapi jika mau responsif ubah ke "wrap" */
+  width: 100%; /* Pastikan mengambil lebar penuh */
+  margin-left: 1%;
+}
+
+.feature-image {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Elemen gambar tetap di tengah */
+  flex: 1; /* Memberi proporsi ruang yang sama */
+  max-width: 300px; /* Batasi ukuran gambar */
+}
+
+.feature-image img {
+  width: 100%;
+  max-width: 150px; /* Batas maksimal ukuran gambar */
+  height: auto;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Konten tetap rata tengah */
+  flex: 2; /* Beri proporsi ruang lebih untuk konten dibanding gambar */
+  max-width: 600px; /* Batasi lebar konten */
+}
+
+.feature-label {
+  display: inline-block;
+  background-color: #359381;
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  max-width: fit-content;
+}
+
+.feature-heading {
+  font-size: 24px;
+  color: #000;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  max-width: 75%;
+}
+
+.feature-list {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 20px;
+  color: #555;
+}
+
+.feature-list li {
+  margin-bottom: 10px;
+}
