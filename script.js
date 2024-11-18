@@ -99,19 +99,19 @@ window.addEventListener('scroll', () => {
   hill3.style.left = value * 0.15 + 'px';
   tree.style.top = value * 0.25 + 'px';
   tree.style.left = value * 0.25 + 'px';
-  phone1.style.right = Math.min(value * 1, 200) + 'px';
-  phone2.style.right = Math.min(value * 1.2, 100) + 'px';
-  phone3.style.right = Math.min(value * 1.5, 315) + 'px';
-  phone4.style.right = Math.min(value * 1.7, 30) + 'px';
-  phone5.style.right = Math.min(value * 2, 400) + 'px';
-  deskripsi.style.left = Math.min(value * 2, 100) + 'px';
+  phone1.style.right = Math.min(value * 1, 300) + 'px';
+  phone2.style.right = Math.min(value * 1.2, 200) + 'px';
+  phone3.style.right = Math.min(value * 1.5, 415) + 'px';
+  phone4.style.right = Math.min(value * 1.7, 130) + 'px';
+  phone5.style.right = Math.min(value * 2, 500) + 'px';
+  deskripsi.style.left = Math.min(value * 2, 15) + '%';
 
   // Animasi logo dan content di bagian pengenalan
   if (value > pengenalanOffsetTop + pengenalanHeight * 0.2) {
-    logo.style.left = Math.min(value * 1, 40) + 'px';
+    logo.style.left = Math.min(value * 1, 150) + 'px';
     logo.style.top = Math.min(value * 1.5, 5) + '%';
-    content.style.right = Math.min(value * 1, 60) + 'px';
-    content.style.top = Math.min(value * 1.5, 7) + '%';
+    content.style.right = Math.min(value * 1, 70) + 'px';
+    content.style.top = Math.min(value * 1.5, 12) + '%';
   } else {
     logo.style.left = '0px';
     logo.style.top = '0%';

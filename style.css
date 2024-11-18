@@ -89,18 +89,18 @@ header {
   background-repeat: no-repeat;
   height: 90vh;
   padding: 0 20% 10%;
+  margin-top: 0.25vh;
   gap: 50px;
 }
 
 .deskripsi {
   position: absolute;
   top: 15%;
-  left: 25%;
+  left: 1%;;
   width: 100%;
   pointer-events: none;
   z-index: 50;
-  /* transform: translate(-50%, 50%); */
-  transition: 1.2s ease; /* Smooth transition */
+    transition: 0.6s ease; /* Smooth transition */
   text-shadow: 2px 2px 4px rgba(0,  0,  0,  .2);
   font-size: 1.5em;
   color: #fff;
