@@ -89,16 +89,70 @@ window.addEventListener("scroll", function () {
 });
 
 
-// Pilih semua tautan dalam navigasi
-const navLinks = document.querySelectorAll('.navigation a');
 
-// Tambahkan event listener ke setiap tautan
+const navLinks = document.querySelectorAll('.navigation a');
+const sections = document.querySelectorAll('section');
+const footer = document.querySelector('#kontak');
+
 navLinks.forEach(link => {
-  link.addEventListener('click', function () {
-    // Hapus kelas 'active' dari semua tautan
+  link.addEventListener('click', function (event) {
+    event.preventDefault();
     navLinks.forEach(nav => nav.classList.remove('active'));
-    
-    // Tambahkan kelas 'active' ke tautan yang diklik
     this.classList.add('active');
+    const targetId = this.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   });
+});
+
+window.addEventListener("scroll", () => {
+  sections.forEach((section) => {
+    const sectionHeight = section.offsetHeight;
+    const sectionTop = section.offsetTop - 50;
+    const sectionId = section.getAttribute("id");
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${sectionId}`) {
+          link.classList.add("active");
+        }
+      });
+    }
+  });
+
+  const footerTop = footer.offsetTop;
+  const scrollPosition = window.scrollY + window.innerHeight;
+  
+  if (scrollPosition >= footerTop) {
+    navLinks.forEach(link => link.classList.remove('active'));
+    const contactLink = document.querySelector('.navigation a[href="#kontak"]');
+    if (contactLink) {
+      contactLink.classList.add('active');
+    }
+  }
+});
+
+const observerOptions = {
+  root: null,
+  threshold: 0.6
+};
+
+const observerCallback = (entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(link => link.classList.remove('active'));
+      const activeLink = document.querySelector(`.navigation a[href="#${entry.target.id}"]`);
+      if (activeLink) activeLink.classList.add('active');
+    }
+  });
+};
+
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+sections.forEach(section => {
+  if (section.id) {
+    observer.observe(section);
+  }
 });

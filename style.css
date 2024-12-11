@@ -683,7 +683,7 @@ header.scrolled {
   background-size: 100% auto; /* Sesuaikan lebar dengan layar, tinggi menyesuaikan */
   background-position: center; /* Gambar berada di tengah */
   background-repeat: no-repeat; /* Hindari pengulangan gambar */
-  height: 400px; /* Tetapkan tinggi agar sesuai dengan proporsi gambar */
+  height: 53.2vh; /* Tetapkan tinggi agar sesuai dengan proporsi gambar */
   margin-bottom: 0;
 }
 
