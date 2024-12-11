@@ -9,13 +9,16 @@
   </head>
 
   <body>
-    <header>
-      <h2 class="logo1">M-Paspor</h2>
-      <nav class="navigation">
+    <header id="navbar">
+      <h2 id="logo1" class="logo1">M-Paspor</h2>
+      <nav class="navigation" id="navbar">
         <a href="#" class="active">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+        <a href="#tentang">About</a>
+        <a href="#fitur">Features</a>
+        <a href="#prototype">Prototypes</a>
+        <a href="#proses">Design Process</a>
+        <a href="#tim">Team</a>
+        <a href="#kontak">Contact</a>
       </nav>
     </header>
 
@@ -57,7 +60,7 @@
       </div>
     </section>
 
-    <section class="container">
+    <section class="container" id="tentang">
       <div id="logo-img" class="logo-section">
         <div class="logo-img">
           <img src="logo.png" alt="Logo" />
@@ -67,39 +70,47 @@
         <h1 id="title" class="title">Tentang Kami</h1>
         <h2>Visi dan Misi</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-          quaerat fugiat molestias officia, sint inventore dolore quo placeat.
+          <ul>
+            <li>
+              Membuat pelayanan paspor lebih transparan, akuntabel, dan cepat.
+            </li>
+            <li>
+              Memudahkan proses pembuatan paspor 
+            </li>
+
+          </ul>
         </p>
         <h2>Latar Belakang</h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsa
-          velit error odio, quia fuga dolores assumenda recusandae.
+          Banyak pengguna yang merasa bahwa proses perpanjangan paspor
+          dipersulit oleh sistem atau aplikasi. Navigasi dan alur proses
+          aplikasi tidak jelas atau membingungkan. Pengguna merasa tidak
+          mendapatkan informasi yang jelas tentang status aplikasi, kuota, dan
+          proses perpanjangan paspor.
         </p>
       </div>
     </section>
 
-    <section class="feature-section">
+    <section class="feature-section" id="fitur">
       <h1 class="feature-title">Fitur</h1>
 
       <!-- Fitur 1 -->
       <div class="feature-container bg-1">
         <div class="feature-image">
-          <img src="tengah.png" alt="Phone Image" />
+          <img src="draft.png" alt="Phone Image" />
         </div>
         <div class="feature-content">
           <span class="feature-label"
-            >Fitur 1: Pendaftaran dan Verifikasi Online</span
+            >Fitur 1: Penyimpanan draft ketika proses upload berkas.</span
           >
           <h3 class="feature-heading">
-            Buat pendaftaran dan verifikasi akunmu dengan cepat dan mudah!
+            Simpan progres pengisian berkasmu tanpa khawatir data hilang!
           </h3>
           <ul class="feature-list">
-            <li>Daftar dengan menggunakan data pribadi yang valid.</li>
-            <li>Verifikasi identitas secara online tanpa perlu tatap muka.</li>
-            <li>
-              Akses akun secara aman dan pribadi setelah verifikasi selesai.
-            </li>
-            <li>Mudah digunakan dan dapat diakses kapan saja.</li>
+            <li>Upload berkas secara bertahap sesuai kebutuhan.</li>
+            <li>Fitur auto-save untuk menyimpan progres secara otomatis.</li>
+            <li>Lanjutkan pengisian kapan saja sesuai kenyamananmu.</li>
+            <li>Data aman dan hanya dapat diakses oleh akunmu.</li>
           </ul>
         </div>
       </div>
@@ -107,35 +118,36 @@
       <!-- Fitur 2 -->
       <div class="feature-container reverse bg-2">
         <div class="feature-content">
-          <span class="feature-label">Fitur 2: Pelacakan Progres Aplikasi</span>
+          <span class="feature-label">Fitur 2: Bantuan dan live chat untuk mengatasi kendala teknis.</span>
           <h3 class="feature-heading">
-            Lacak status aplikasi paspormu dengan mudah.
+            Dapatkan bantuan instan melalui fitur live chat kami!
           </h3>
           <ul class="feature-list">
-            <li>Lihat tahapan proses pembuatan paspor secara real-time.</li>
-            <li>Dapatkan notifikasi otomatis untuk pembaruan.</li>
-            <li>Akses informasi kapan saja dan di mana saja.</li>
+            <li>Tim support siap membantu selama jam kerja.</li>
+            <li>Solusi cepat untuk kendala teknis dan pertanyaan pengguna.</li>
+            <li>Panduan lengkap tersedia melalui chatbot pintar.</li>
+            <li>Berkomunikasi langsung dengan agen untuk permasalahan kompleks.<li>
           </ul>
         </div>
         <div class="feature-image">
-          <img src="tengah.png" alt="Phone Image" />
+          <img src="live.png" alt="Phone Image" />
         </div>
       </div>
 
       <!-- Fitur 3 -->
       <div class="feature-container bg-1">
         <div class="feature-image">
-          <img src="tengah.png" alt="Phone Image" />
+          <img src="pesan.png" alt="Phone Image" />
         </div>
         <div class="feature-content">
-          <span class="feature-label">Fitur 3: Pengingat Jadwal</span>
+          <span class="feature-label">Fitur 3: Pemesanan nomor antrean perpanjangan M-Paspor.</span>
           <h3 class="feature-heading">
-            Jangan lewatkan jadwalmu dengan fitur pengingat kami.
-          </h3>
+            Pesan nomor antrean dengan mudah di kantor imigrasi terdekat!</h3>
           <ul class="feature-list">
-            <li>Atur jadwal pengajuan paspor sesuai preferensimu.</li>
-            <li>Dapatkan pengingat melalui aplikasi dan email.</li>
-            <li>Mudah diintegrasikan dengan kalender pribadimu.</li>
+            <li>Cek ketersediaan kuota antrean di berbagai lokasi.</li>
+            <li>Pilih jadwal yang sesuai dengan waktu luangmu.</li>
+            <li>Tentukan lokasi kantor imigrasi terdekat dengan peta interaktif.</li>
+            <li>Kurangi waktu antre dengan sistem reservasi online.</li>
           </ul>
         </div>
       </div>
@@ -143,33 +155,33 @@
       <!-- Fitur 4 -->
       <div class="feature-container reverse bg-2">
         <div class="feature-content">
-          <span class="feature-label">Fitur 4: Layanan Bantuan 24/7</span>
+          <span class="feature-label">Fitur 4: Pengisian dokumen secara digital.</span>
           <h3 class="feature-heading">
-            Dapatkan bantuan kapan saja dengan layanan pelanggan kami.
+            Isi dokumen dengan cepat dan tanpa ribet melalui platform kami!
           </h3>
           <ul class="feature-list">
-            <li>Chat langsung dengan tim dukungan kami.</li>
-            <li>Panduan lengkap tersedia dalam aplikasi.</li>
-            <li>Solusi cepat untuk pertanyaan atau masalah teknis.</li>
+            <li>Unggah dokumen yang diperlukan dalam format digital.</li>
+            <li>Isi formulir langsung di aplikasi tanpa perlu mencetak.</li>
+            <li>Fitur validasi otomatis untuk memastikan data sesuai.</li>
+            <li>Dapatkan notifikasi jika dokumen memerlukan perbaikan.</li>
           </ul>
         </div>
         <div class="feature-image">
-          <img src="tengah.png" alt="Phone Image" />
+          <img src="pengisian.png" alt="Phone Image" />
         </div>
       </div>
     </section>
 
-    <section class="prototype-section">
+    <section class="prototype-section" id="prototype">
       <div class="prototype-container">
         <div class="prototype-images">
-          <img src="tengah.png" alt="Phone Mockup 1" />
-          <img src="tengah.png" alt="Phone Mockup 1" />
+          <img src="protokiri.png" alt="Phone Mockup 1" />
+          <img src="protokanan.png" alt="Phone Mockup 1" />
         </div>
         <div class="prototype-content">
           <h1>Our Prototypes</h1>
           <p>
-            Say goodbye to food waste and let Fridgeku revolutionize the way you
-            manage your food. Check out the prototype today!
+            "Say goodbye to long queues and complicated processes! Let M-Paspor revolutionize the way you handle your passport renewal. Check out the platform today!"<hr>
             <a href="#" class="documentation-link">README Documentation</a>.
           </p>
           <a href="#" class="try-now-button">Try Now!</a>
@@ -194,7 +206,7 @@
       </div>
     </section>
 
-    <section class="design-process">
+    <section class="design-process" id="proses">
       <div class="header">
         <h1>Design Process</h1>
         <p>
@@ -259,14 +271,14 @@
       </div>
     </section>
 
-    <section class="team-section">
+    <section class="team-section" id="tim">
       <h1>Our Incredible Team</h1>
       <div class="team-container">
         <!-- Row 1 -->
         <div class="team-row">
           <div class="team-member">
             <div class="member-photo">
-              <img src="profilepicture.png" />
+              <img src="delvinbos.png" />
             </div>
             <h3><span class="highlight">Darrell</span> Valentino</h3>
             <p>5026221086</p>
@@ -274,7 +286,7 @@
           </div>
           <div class="team-member">
             <div class="member-photo">
-              <img src="profilepicture.png" />
+              <img src="jess.png" />
             </div>
             <h3>Gabriela <span class="highlight">Jessica</span></h3>
             <p>5026221175</p>
@@ -282,7 +294,7 @@
           </div>
           <div class="team-member">
             <div class="member-photo">
-              <img src="profilepicture.png" />
+              <img src="faiz.png" />
             </div>
             <h3><span class="highlight">Faiz</span> Musyaffa</h3>
             <p>5026221153</p>
@@ -293,7 +305,7 @@
         <div class="team-row">
           <div class="team-member">
             <div class="member-photo">
-              <img src="profilepicture.png" />
+              <img src="aul.png" />
             </div>
             <h3><span class="highlight">Aulisa</span> Rizki Amanda</h3>
             <p>5026221024</p>
@@ -301,7 +313,7 @@
           </div>
           <div class="team-member">
             <div class="member-photo">
-              <img src="profilepicture.png" />
+              <img src="jasmine.png" />
             </div>
             <h3><span class="highlight">Jasmine</span> Saimarantha</h3>
             <p>5026221107</p>
@@ -310,6 +322,39 @@
         </div>
       </div>
     </section>
+
+    <section class="ending-section"></section>
+
+    <footer id="kontak">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>M-Paspor</h3>
+          <p>Bikin Paspor Gak Pake Repot!</p>
+        </div>
+        <div class="footer-section">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p>
+            Email:
+            <a href="mailto:kelompok5dppd@gmail.com">kelompok5dppd@gmail.com</a>
+          </p>
+          <p>Telepon: +62 81226030023</p>
+          <p>Alamat: Jl. Marina Emas Barat B33</p>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <p>&copy; 2024 Kelompok 5 DPP D. All Rights Reserved.</p>
+      </div>
+    </footer>
 
     <script src="script.js" async></script>
   </body>
