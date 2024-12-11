@@ -530,7 +530,8 @@ header {
 }
 
 .design-process .header h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 800;
   color: #4a2e00;
 }
 
@@ -538,6 +539,7 @@ header {
   font-size: 1.1rem;
   margin-bottom: 20px;
   color: #5c3f00;
+  font-weight: 600;
 }
 
 .cards {
@@ -566,8 +568,8 @@ header {
 }
 
 .card img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 15px;
 }
 
@@ -580,13 +582,14 @@ header {
 .btn {
   display: inline-block;
   margin: 5px;
-  padding: 10px 15px;
+  padding: 12px 20px;
   background-color: #ff7f00;
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 18px;
   font-size: 0.9rem;
   transition: background-color 0.3s ease;
+  font-weight: 500;
 }
 
 .btn:hover {
@@ -595,12 +598,19 @@ header {
 
 .team-section {
   padding: 50px 20px;
+  background-image: url("bg-7.png"); /* Ganti dengan path gambar Anda */
+  min-height: 123vh;
+  background-size: fit; /* Pastikan gambar menutupi seluruh area */
+  background-position: center; /* Gambar berada di tengah */
+  background-repeat: repeat-x; /* Mencegah pengulangan gambar */
+  margin-bottom: 0;
 }
 
 .team-section h1 {
   font-size: 2.5em;
   color: #5a3c2c;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 /* Team Container */
@@ -615,7 +625,7 @@ header {
 .team-row {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 135px;
 }
 
 /* Team Member */
@@ -644,6 +654,13 @@ header {
   margin: 5px 0;
 }
 
+/* Highlight the nickname with a custom style */
+.highlight {
+  font-weight: bold;
+  color: #5a3c2c; /* Dark color for the nickname */
+  font-style: italic; /* Optional: Make it italic */
+}
+
 .team-member p {
   margin: 2px 0;
   font-size: 0.9em;
@@ -652,5 +669,5 @@ header {
 
 /* Adjust layout for staggered effect */
 .team-row:nth-child(2) .team-member {
-  margin-top: 50px;
+  margin-top: -100px;
 }
