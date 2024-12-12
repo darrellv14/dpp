@@ -100,9 +100,14 @@ navLinks.forEach(link => {
     navLinks.forEach(nav => nav.classList.remove('active'));
     this.classList.add('active');
     const targetId = this.getAttribute('href').substring(1);
-    const targetSection = document.getElementById(targetId);
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    if (targetId === "") {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      const targetSection = document.getElementById(targetId);
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }
   });
 });
@@ -131,28 +136,5 @@ window.addEventListener("scroll", () => {
     if (contactLink) {
       contactLink.classList.add('active');
     }
-  }
-});
-
-const observerOptions = {
-  root: null,
-  threshold: 0.6
-};
-
-const observerCallback = (entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      navLinks.forEach(link => link.classList.remove('active'));
-      const activeLink = document.querySelector(`.navigation a[href="#${entry.target.id}"]`);
-      if (activeLink) activeLink.classList.add('active');
-    }
-  });
-};
-
-const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-sections.forEach(section => {
-  if (section.id) {
-    observer.observe(section);
   }
 });
