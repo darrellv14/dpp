@@ -6,6 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Delvin</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="style.css" as="style" />
+    <link rel="preload" href="hill1.png" as="image" />
+    <link rel="preload" href="hill2.png" as="image" />
+    <link rel="preload" href="hill3.png" as="image" />
+    <link rel="preload" href="hill4(1).png" as="image" />
+    <link rel="preload" href="hill5(1).png" as="image" />
+    <link rel="preload" href="tree.png" as="image" />
+    <link rel="preload" href="leaf.png" as="image" />
+    <link rel="preload" href="plant2.png" as="image" />
+
+    <!-- Prefetch less critical resources -->
+    <link rel="prefetch" href="logo.png" />
+    <link rel="prefetch" href="logo2.png" />
+    <link rel="prefetch" href="tengah.png" />
+    <link rel="prefetch" href="kanan.png" />
+    <link rel="prefetch" href="kiri.png" />
+    <link rel="prefetch" href="kananujung.png" />
+    <link rel="prefetch" href="kiriujung.png" />
+    <link rel="prefetch" href="draft.png" />
+    <link rel="prefetch" href="live.png" />
+    <link rel="prefetch" href="pesan.png" />
+    <link rel="prefetch" href="pengisian.png" />
+    <link rel="prefetch" href="protokiri.png" />
+    <link rel="prefetch" href="protokanan.png" />
+    <link rel="prefetch" href="delvinbos.png" />
+    <link rel="prefetch" href="jess.png" />
+    <link rel="prefetch" href="faiz.png" />
+    <link rel="prefetch" href="aul.png" />
   </head>
 
   <body>
@@ -37,8 +67,8 @@
     <section class="pengenalan">
       <div class="deskripsi" id="deskripsi">
         <div class="logo-container">
-          <img src="logo.png" alt="Logo Aplikasi" class="logo" />
-          <img src="logo2.png" alt="Logo Aplikasi" class="logo" />
+          <img src="logo.png" alt="Logo Aplikasi" class="logo" loading="lazy" />
+          <img src="logo2.png" alt="Logo Aplikasi" class="logo" loading="lazy" />
           <!-- <span class="nama-aplikasi">M-Paspor</span> -->
         </div>
         <h1 class="judul" id="beres">
@@ -52,18 +82,18 @@
 
       <!-- Kanan: Gambar Handphone -->
       <div class="gambar-handphone">
-        <img src="tengah.png" id="phone1" class="phone1" />
-        <img src="kanan.png" id="phone2" class="phone2" />
-        <img src="kiri.png" id="phone3" class="phone3" />
-        <img src="kananujung.png" id="phone4" class="phone4" />
-        <img src="kiriujung.png" id="phone5" class="phone5" />
+        <img src="tengah.png" id="phone1" class="phone1" loading="lazy" />
+        <img src="kanan.png" id="phone2" class="phone2" loading="lazy" />
+        <img src="kiri.png" id="phone3" class="phone3" loading="lazy" />
+        <img src="kananujung.png" id="phone4" class="phone4" loading="lazy" />
+        <img src="kiriujung.png" id="phone5" class="phone5" loading="lazy" />
       </div>
     </section>
 
     <section class="container" id="tentang">
       <div id="logo-img" class="logo-section">
         <div class="logo-img">
-          <img src="logo.png" alt="Logo" />
+          <img src="logo.png" alt="Logo" loading="lazy" />
         </div>
       </div>
       <div id="content" class="content-section">
@@ -97,7 +127,7 @@
       <!-- Fitur 1 -->
       <div class="feature-container bg-1">
         <div class="feature-image">
-          <img src="draft.png" alt="Phone Image" />
+          <img src="draft.png" alt="Phone Image" loading="lazy" />
         </div>
         <div class="feature-content">
           <span class="feature-label"
@@ -126,18 +156,18 @@
             <li>Tim support siap membantu selama jam kerja.</li>
             <li>Solusi cepat untuk kendala teknis dan pertanyaan pengguna.</li>
             <li>Panduan lengkap tersedia melalui chatbot pintar.</li>
-            <li>Berkomunikasi langsung dengan agen untuk permasalahan kompleks.<li>
+            <li>Berkomunikasi langsung dengan agen untuk permasalahan kompleks.</li>
           </ul>
         </div>
         <div class="feature-image">
-          <img src="live.png" alt="Phone Image" />
+          <img src="live.png" alt="Phone Image" loading="lazy" />
         </div>
       </div>
 
       <!-- Fitur 3 -->
       <div class="feature-container bg-1">
         <div class="feature-image">
-          <img src="pesan.png" alt="Phone Image" />
+          <img src="pesan.png" alt="Phone Image" loading="lazy" />
         </div>
         <div class="feature-content">
           <span class="feature-label">Fitur 3: Pemesanan nomor antrean perpanjangan M-Paspor.</span>
@@ -167,7 +197,7 @@
           </ul>
         </div>
         <div class="feature-image">
-          <img src="pengisian.png" alt="Phone Image" />
+          <img src="pengisian.png" alt="Phone Image" loading="lazy" />
         </div>
       </div>
     </section>
@@ -175,8 +205,8 @@
     <section class="prototype-section" id="prototype">
       <div class="prototype-container">
         <div class="prototype-images">
-          <img src="protokiri.png" alt="Phone Mockup 1" />
-          <img src="protokanan.png" alt="Phone Mockup 1" />
+          <img src="protokiri.png" alt="Phone Mockup 1" loading="lazy" />
+          <img src="protokanan.png" alt="Phone Mockup 1" loading="lazy" />
         </div>
         <div class="prototype-content">
           <h1>Our Prototypes</h1>
@@ -216,26 +246,26 @@
       </div>
       <div class="cards">
         <section class="card">
-          <img src="analysis.png" alt="Needfinding Icon" />
+          <img src="analysis.png" alt="Needfinding Icon" loading="lazy" />
           <h3>Needfinding</h3>
           <a href="https://drive.google.com/file/d/1HDL0TNmK1X5mowO_0-lOj2zPF2Tp54ur/view?usp=sharing" target="_blank" class="btn">PDF Version</a>
           <a href="https://www.canva.com/design/DAGP5ztcpHo/SyXBK4ClcrKI6WJs8I9yjg/view?utm_content=DAGP5ztcpHo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0029df0d9b" target="_blank" class="btn">PPT Version</a>
         </section>
         <section class="card">
-          <img src="emotions.png" alt="POVs Icon" />
+          <img src="emotions.png" alt="POVs Icon" loading="lazy" />
           <h3>POVs & Experience Prototypes</h3>
           <a href="https://drive.google.com/file/d/1vzq5L-J6tMwE4oVTzNmMXsVcWXVAW5h6/view?usp=sharing" target="_blank" class="btn">PDF Version</a>
           <a href="https://www.canva.com/design/DAGR022OEqg/lKGsg-yvHzzaHxGXE3G0Zw/view?utm_content=DAGR022OEqg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7cc2f60f2b" target="_blank" class="btn">PPT Version</a>
         </section>
         <section class="card">
-          <img src="video.png" alt="Concept Video Icon" />
+          <img src="video.png" alt="Concept Video Icon" loading="lazy" />
           <h3>Concept Video</h3>
           <a href="https://drive.google.com/file/d/1PFaxNM6Wq4gUk6wJCoX0Q_HSVBPIQgap/view?usp=sharing" target="_blank" class="btn">PDF Version</a>
           <a href="https://www.canva.com/design/DAGUHMmqWnU/IOqW5f6_TNt2TNX8SLvjew/view?utm_content=DAGUHMmqWnU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbc9a4fc762" target="_blank" class="btn">PPT Version</a>
           <a href="https://www.youtube.com/watch?v=WPpEvHq-WYQ" target="_blank" class="btn">Youtube Video</a>
         </section>
         <section class="card">
-          <img src="sketch.png" alt="Lo-Fi Prototype Icon" />
+          <img src="sketch.png" alt="Lo-Fi Prototype Icon" loading="lazy" />
           <h3>Lo-Fi Prototype</h3>
           <a href="https://drive.google.com/file/d/1m2NkuiDXBurLrnDqe_mdA9qPJkHo6zfZ/view?usp=sharing" target="_blank" class="btn">PDF Report</a>
           <a href="https://www.figma.com/proto/r8WDHMe3N5GWqxT91HJOTo/app?node-id=90-925&node-type=canvas&t=fgJBw3IJF808Otbq-0&scaling=scale-down&content-scaling=fixed&page-id=8%3A2&starting-point-node-id=90%3A925&show-proto-sidebar=1" target="_blank" class="btn">Lo-Fi Prototype</a>
@@ -244,24 +274,24 @@
       <!-- Row 2 -->
       <div class="cards-2">
         <section class="card">
-          <img src="ux.png" alt="Needfinding Icon" />
+          <img src="ux.png" alt="Needfinding Icon" loading="lazy" />
           <h3>Med-Fi Prototype</h3>
           <a href="https://www.figma.com/proto/r8WDHMe3N5GWqxT91HJOTo/app?node-id=306-2567&node-type=canvas&t=fgJBw3IJF808Otbq-0&scaling=scale-down&content-scaling=fixed&page-id=306%3A2567" target="_blank" class="btn">Med-Fi Prototype</a>
           <a href="https://drive.google.com/file/d/1TS17y9ajBB72fUMnW_qcXoZb74qt4VxH/view?usp=sharing" target="_blank" class="btn">Med-Fi README</a>
         </section>
         <section class="card">
-          <img src="assessment.png" alt="POVs Icon" />
+          <img src="assessment.png" alt="POVs Icon" loading="lazy" />
           <h3>Heuristic Evaluation</h3>
           <a href="https://drive.google.com/file/d/1Bl8IaiTG_J0mQnogvc0Uv41KACxfdeYJ/view?usp=sharing" target="_blank" class="btn">PDF Report</a>
         </section>
         <section class="card">
-          <img src="uiux.png" alt="Concept Video Icon" />
+          <img src="uiux.png" alt="Concept Video Icon" loading="lazy" />
           <h3>Hi-Fi Prototypes</h3>
           <a href="#" class="btn">PDF Report</a>
           <a href="#" class="btn">Hi-Fi Prototype</a>
         </section>
         <section class="card">
-          <img src="presentation.png" alt="Lo-Fi Prototype Icon" />
+          <img src="presentation.png" alt="Lo-Fi Prototype Icon" loading="lazy" />
           <h3>Poster & Pitch Slide</h3>
           <a href="#" class="btn">Poster</a>
           <a href="#" class="btn">Pitch Slide</a>
@@ -277,7 +307,7 @@
         <div class="team-row">
           <div class="team-member">
             <div class="member-photo">
-              <img src="delvinbos.png" />
+              <img src="delvinbos.png" loading="lazy" />
             </div>
             <h3><span class="highlight">Darrell</span> Valentino</h3>
             <p>5026221086</p>
@@ -285,7 +315,7 @@
           </div>
           <div class="team-member">
             <div class="member-photo">
-              <img src="jess.png" />
+              <img src="jess.png" loading="lazy" />
             </div>
             <h3>Gabriela <span class="highlight">Jessica</span></h3>
             <p>5026221175</p>
@@ -293,7 +323,7 @@
           </div>
           <div class="team-member">
             <div class="member-photo">
-              <img src="faiz.png" />
+              <img src="faiz.png" loading="lazy" />
             </div>
             <h3><span class="highlight">Faiz</span> Musyaffa</h3>
             <p>5026221153</p>
@@ -304,7 +334,7 @@
         <div class="team-row">
           <div class="team-member">
             <div class="member-photo">
-              <img src="aul.png" />
+              <img src="aul.png" loading="lazy" />
             </div>
             <h3><span class="highlight">Aulisa</span> Rizki Amanda</h3>
             <p>5026221024</p>
@@ -312,7 +342,7 @@
           </div>
           <div class="team-member">
             <div class="member-photo">
-              <img src="jasmine.png" />
+              <img src="jasmine.png" loading="lazy" />
             </div>
             <h3><span class="highlight">Jasmine</span> Saimarantha</h3>
             <p>5026221107</p>

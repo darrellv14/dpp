@@ -245,12 +245,9 @@ header.scrolled {
   flex-wrap: wrap;
   padding: 20px;
   align-items: center;
-  min-height: 100vh;
+  min-height: 85vh;
   margin: auto;
-  background-image: url("bg-2.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(to bottom, #8EDBD1, #f9f9f9);
   position: relative;
 }
 
